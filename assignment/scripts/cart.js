@@ -11,7 +11,7 @@ function addItem(item) {
     return true;
 }
 
-// Test function
+// Test 
 console.log('Add protein powder to basket:', addItem('protein powder'));
 console.log('Add yogurt to basket:', addItem('yogurt'));
 console.log('Add bagels to basket:', addItem('bagels'));
@@ -35,4 +35,7 @@ function empty(array) {
     }
 }
 
-// 
+// Test
+empty(basket);
+
+console.log('The basket is empty now:', basket);
