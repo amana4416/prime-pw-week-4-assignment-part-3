@@ -16,9 +16,23 @@ console.log('Add protein powder to basket:', addItem('protein powder'));
 console.log('Add yogurt to basket:', addItem('yogurt'));
 console.log('Add bagels to basket:', addItem('bagels'));
 
+console.log("What's in the basket?", basket);
+
 // Create a function called `listItems`
 function listItems(array) {
     for (let item of array) {
         console.log(item);
     }
 }
+
+// Test
+listItems(basket);
+
+// Create a function called `empty`
+function empty(array) {
+    while (array.length > 0) {
+        array.pop();
+    }
+}
+
+// 
