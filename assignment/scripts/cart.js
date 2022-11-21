@@ -39,3 +39,54 @@ function empty(array) {
 empty(basket);
 
 console.log('The basket is empty now:', basket);
+
+
+
+//STRETCH GOALS//
+
+// Add a global `const` named `maxItems` and set it to 5
+const maxItems = 5;
+
+// Create a function called isFull()
+function isFull(array) {
+    if (array.length < 5) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+// Test
+console.log('Is the basket full?', isFull(basket));
+basket ['elbow pasta', 'shredded cheese', 'cream cheese', 'heavy whipping cream', 'shallots']
+console.log('Add onion powder to basket:', basket);
+console.log('Is the basket full?', isFull(basket));
+
+// Update the required `addItem` function
+function addItem(item) {
+    if (isFull(basket)) {
+        return false;
+    } else {
+        basket.push(item);
+        return true;
+    }
+}
+
+// Test
+console.log('Do not add frosting to the basket', addItem('frosting'));
+console.log('What is in the basket?', basket);
+console.log('Now empty the basket so we can get frosting:', empty(basket));
+console.log('See if the basket is empty', basket);
+console.log('Add forsting to the basket', addItem('frosting'));
+console.log('What is in the basket now??', basket);
+
+
+//Create a function called `removeItem'
+function removeItem(item) {
+    if(basket[basket.indexOf(item)] === item) { 
+        return basket.splice(basket.indexOf(item), 1);
+    }else {
+        return null;
+    }
+}
+
