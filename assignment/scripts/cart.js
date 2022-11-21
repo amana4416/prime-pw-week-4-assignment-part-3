@@ -81,12 +81,16 @@ console.log('Add forsting to the basket', addItem('frosting'));
 console.log('What is in the basket now??', basket);
 
 
-//Create a function called `removeItem'
+// Create a function called `removeItem'
 function removeItem(item) {
-    if(basket[basket.indexOf(item)] === item) { 
+    if (basket[basket.indexOf(item)] === item) { 
         return basket.splice(basket.indexOf(item), 1);
-    }else {
+    } else {
         return null;
     }
 }
 
+// Test
+console.log('Is there candy in the basket?', removeItem('candy'));
+console.log('Take out frosting', removeItem('frosting'));
+console.log('The basket is now empty', basket);
